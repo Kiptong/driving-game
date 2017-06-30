@@ -1,5 +1,6 @@
 * {
   margin: 0;
+  padding: 0;
 }
 
 .board {
@@ -7,7 +8,16 @@
   height: 300px;
 }
 
+#car {
+  display: inline-block;
+}
+
+#carImgDiv {
+  display: inline-block;
+}
+
 #title {
+  padding: 10px;
   color: #cf0c0c;
   text-align: center;
 }
@@ -16,8 +26,8 @@
   background-color: #333036;
 }
 
-.car-path {
-  height: 100px;
+#car-path {
+  height: 50px;
   margin: 0;
   background-color: #333036;
 }
