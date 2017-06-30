@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+}
+
+.board {
+  background-color: green;
+  height: 300px;
+}
+
+#title {
+  color: #cf0c0c;
+  text-align: center;
+}
+
+.road {
+  background-color: #333036;
+}
+
+.car-path {
+  height: 100px;
+  margin: 0;
+  background-color: #333036;
+}
+
+.lane {
+  display: inline-block;
+}
