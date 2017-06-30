@@ -6,7 +6,12 @@ class Car {
     this.location = location
     return this
   }
-
+  accelerate(speed) {
+    this.speed = speed
+  }
+  turn(direction) {
+    this.direction = direction
+  }
   createCar(img) {
     const $carLine = document.createElement('li')
     $carLine.setAttribute('id', 'car')
@@ -27,4 +32,3 @@ class Car {
 
 const kip = new Car('north', 0, [50, 50])
 kip.createCar('car-images/ferrari.png')
-console.log(kip)
