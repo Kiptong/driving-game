@@ -12,6 +12,23 @@ class Car {
   turn(direction) {
     this.direction = direction
   }
+  move() {
+    switch (this.direction) {
+      case 'North':
+        this.location[1] -= this.speed
+        break
+      case 'South':
+        this.location[0] += this.speed
+        break
+      case 'East':
+        this.location[1] -= this.speed
+        break
+      case 'West':
+        this.location[0] += this.speed
+        break
+    }
+
+  }
   createCar(img) {
     const $carLine = document.createElement('li')
     $carLine.setAttribute('id', 'car')
@@ -27,6 +44,9 @@ class Car {
 
     const $road = document.getElementById('car-path')
     $road.append($carLine)
+  }
+  static start() {
+
   }
 }
 
