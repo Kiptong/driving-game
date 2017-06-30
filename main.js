@@ -1,5 +1,11 @@
 /* eslint-disable no-unused-vars */
 class Car {
+  constructor(direction, speed, location) {
+    this.direction = direction
+    this.speed = speed
+    this.location = location
+    return this
+  }
 
   createCar(img) {
     const $carLine = document.createElement('li')
@@ -19,6 +25,6 @@ class Car {
   }
 }
 
-const kip = new Car()
-
+const kip = new Car('north', 0, [50, 50])
 kip.createCar('car-images/ferrari.png')
+console.log(kip)
