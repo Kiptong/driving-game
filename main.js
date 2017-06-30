@@ -1,19 +1,24 @@
 /* eslint-disable no-unused-vars */
-function createCar(img) {
-  const $carLine = document.createElement('li')
-  $carLine.setAttribute('id', 'car')
+class Car {
 
-  const $carImgDiv = document.createElement('div')
-  $carImgDiv.setAttribute('id', 'carImgDiv')
+  createCar(img) {
+    const $carLine = document.createElement('li')
+    $carLine.setAttribute('id', 'car')
 
-  const $car = document.createElement('img')
-  $car.setAttribute('src', img)
+    const $carImgDiv = document.createElement('div')
+    $carImgDiv.setAttribute('id', 'carImgDiv')
 
-  $carImgDiv.append($car)
-  $carLine.append($carImgDiv)
+    const $car = document.createElement('img')
+    $car.setAttribute('src', img)
 
-  const $road = document.getElementById('car-path')
-  $road.append($carLine)
+    $carImgDiv.append($car)
+    $carLine.append($carImgDiv)
+
+    const $road = document.getElementById('car-path')
+    $road.append($carLine)
+  }
 }
 
-createCar('car-images/ferrari.png')
+const kip = new Car()
+
+kip.createCar('car-images/ferrari.png')
